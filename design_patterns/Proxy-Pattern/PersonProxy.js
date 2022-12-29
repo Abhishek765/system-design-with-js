@@ -30,3 +30,8 @@ const personProxyWithReflect = new Proxy(person, {
 const personProxyWithShallow = person;
 
 export { personProxy, personProxyWithReflect, personProxyWithShallow };
+
+/**
+ * Blog to read more about: JS proxy
+ * https://davidwalsh.name/javascript-proxy
+ */
