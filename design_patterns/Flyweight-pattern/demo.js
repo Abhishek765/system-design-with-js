@@ -15,9 +15,11 @@ const booksList = [];
 const createBook = (title, author, isbn) => {
   const existingBook = books.has(isbn);
 
+  // this code means that this is just a copy of the existing book so we can simply return existingBook instead of creating new book
   if (existingBook) {
     return existingBook;
   }
+  // otherwise this is a new book so create a new book and store in our books collection
   const newBook = new Book(title, author, isbn);
   books.add(isbn);
   return newBook;
